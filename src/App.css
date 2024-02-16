@@ -1,10 +1,28 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100wh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  min-width: 400px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .gradient-custom {
   /* fallback for old browsers */
-  background: #6a11cb;
-  
+  /* background: #6a11cb; */
+
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-  
+  /* background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1)); */
+  background: -webkit-linear-gradient(to right top, #4264af, #4f70ba, #5b7dc4, #688acf, #7597d9, #6ca0e0, #63a9e6, #5ab2eb, #2eb9e7, #00bfdd, #00c3cd, #10c6ba);
+
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
-  }
+  /* background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1)) */
+
+  background: linear-gradient(to right top, #4264af, #4f70ba, #5b7dc4, #688acf, #7597d9, #6ca0e0, #63a9e6, #5ab2eb, #2eb9e7, #00bfdd, #00c3cd, #10c6ba);
+}

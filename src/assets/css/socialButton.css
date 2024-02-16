@@ -6,3 +6,19 @@
 
 }
 
+.my-icon {
+    color: black;
+    font-size: 4rem;
+    display: inline-block; /* Asegura que el enlace se comporte como un bloque */
+     /* Transición suave durante 0.3 segundos */
+     /* transition: transform 0.8s ease; */
+     /* Transición suave durante 0.3 segundos */
+     transition: transform 0.3s ease;
+  }
+  
+  .my-icon:hover {
+    color: black;
+    /* transform: rotate(360deg);  */
+    /* Rota el enlace 360 grados cuando se hace hover */
+    transform: scale(1.2);
+  }

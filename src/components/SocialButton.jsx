@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/socialButton.css'
+import '../assets/css/socialButton.css';
 
 const SocialButton = ({ links }) => {
     //console.log(namesIcon);
@@ -18,4 +18,4 @@ const SocialButton = ({ links }) => {
     );
 };
 
-export default SocialButton
+export default SocialButton;
