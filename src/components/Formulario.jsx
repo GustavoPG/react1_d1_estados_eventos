@@ -1,12 +1,37 @@
 // components/Formulario.jsx
 import React from 'react';
 import { useState } from "react";
+// Importa trim de JavaScript
 
 const Formulario = ({ showAlert }) => {
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [passwordConfirm, setPasswordConfirm] = useState('');
+
+    const handleNombreChange = (e) => {
+        // Utiliza trim adecuadamente para eliminar espacios en blanco
+        const trimmedValue = e.target.value.trim();
+        setNombre(trimmedValue);
+      };
+
+      const handleEmailChange = (e) => {
+        // Utiliza trim adecuadamente para eliminar espacios en blanco
+        const trimmedValue = e.target.value.trim();
+        setEmail(trimmedValue);
+      };
+
+      const handlePasswordChange = (e) => {
+        // Utiliza trim adecuadamente para eliminar espacios en blanco
+        const trimmedValue = e.target.value.trim();
+        setPassword(trimmedValue);
+      };
+
+      const handlePasswordConfirmChange = (e) => {
+        // Utiliza trim adecuadamente para eliminar espacios en blanco
+        const trimmedValue = e.target.value.trim();
+        setPasswordConfirm(trimmedValue);
+      };
 
     const validateForm = (e) => {
         e.preventDefault();
@@ -88,7 +113,7 @@ const Formulario = ({ showAlert }) => {
                         value={nombre}
                         autoFocus
                         maxLength={50}
-                        onChange={(e) => setNombre(e.target.value)}
+                        onChange={handleNombreChange} 
                     />
                 </div>
 
@@ -99,29 +124,29 @@ const Formulario = ({ showAlert }) => {
                         placeholder="Email"
                         value={email}
                         maxLength={50}
-                        onChange={(e) => setEmail(e.target.value)}
+                        onChange={handleEmailChange} 
                     />
                 </div>
 
                 <div className="input-group mb-3">
                     <input
-                        type="text"
+                        type="password"
                         className="form-control"
                         placeholder="Contraseña"
                         value={password}
                         maxLength={25}
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={handlePasswordChange} 
                     />
                 </div>
 
                 <div className="input-group mb-3">
                     <input
-                        type="text"
+                        type="password"
                         className="form-control"
                         placeholder="Confirmar Contraseña"
                         value={passwordConfirm}
                         maxLength={25}
-                        onChange={(e) => setPasswordConfirm(e.target.value)}
+                        onChange={handlePasswordConfirmChange} 
                     />
                 </div>
 
