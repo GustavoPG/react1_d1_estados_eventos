@@ -11,10 +11,9 @@ const App = () => {
 
   return (
     <>
-      <div className="card-body p-5 text-center">
+      <div className="card-body px-5 px-3 text-center">
         <Registro myAlert={ showAlert } alertText={ alert.alertText } alertType={ alert.alertType } alertState={ alert.alertState } />
         <Alert alertText={ alert.alertText } alertType={ alert.alertType } alertState={ alert.alertState } />
-        <hr className="my-4" />
       </div>
     </>
   );
