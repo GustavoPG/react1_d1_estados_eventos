@@ -91,7 +91,7 @@ const Formulario = ({ showAlert }) => {
         showAlert({
             alertText: '¡Registro Exitoso!',
             alertType: 'success',
-            alertState: false
+            alertState: true
         });
 
     };
