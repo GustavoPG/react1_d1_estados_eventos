@@ -13,25 +13,25 @@ const Formulario = ({ showAlert }) => {
         // Utiliza trim adecuadamente para eliminar espacios en blanco
         const trimmedValue = e.target.value.trim();
         setNombre(trimmedValue);
-      };
+    };
 
-      const handleEmailChange = (e) => {
+    const handleEmailChange = (e) => {
         // Utiliza trim adecuadamente para eliminar espacios en blanco
         const trimmedValue = e.target.value.trim();
         setEmail(trimmedValue);
-      };
+    };
 
-      const handlePasswordChange = (e) => {
+    const handlePasswordChange = (e) => {
         // Utiliza trim adecuadamente para eliminar espacios en blanco
         const trimmedValue = e.target.value.trim();
         setPassword(trimmedValue);
-      };
+    };
 
-      const handlePasswordConfirmChange = (e) => {
+    const handlePasswordConfirmChange = (e) => {
         // Utiliza trim adecuadamente para eliminar espacios en blanco
         const trimmedValue = e.target.value.trim();
         setPasswordConfirm(trimmedValue);
-      };
+    };
 
     const validateForm = (e) => {
         e.preventDefault();
@@ -113,7 +113,7 @@ const Formulario = ({ showAlert }) => {
                         value={nombre}
                         autoFocus
                         maxLength={50}
-                        onChange={handleNombreChange} 
+                        onChange={handleNombreChange}
                     />
                 </div>
 
@@ -124,7 +124,7 @@ const Formulario = ({ showAlert }) => {
                         placeholder="Email"
                         value={email}
                         maxLength={50}
-                        onChange={handleEmailChange} 
+                        onChange={handleEmailChange}
                     />
                 </div>
 
@@ -135,7 +135,7 @@ const Formulario = ({ showAlert }) => {
                         placeholder="Contraseña"
                         value={password}
                         maxLength={25}
-                        onChange={handlePasswordChange} 
+                        onChange={handlePasswordChange}
                     />
                 </div>
 
@@ -146,7 +146,7 @@ const Formulario = ({ showAlert }) => {
                         placeholder="Confirmar Contraseña"
                         value={passwordConfirm}
                         maxLength={25}
-                        onChange={handlePasswordConfirmChange} 
+                        onChange={handlePasswordConfirmChange}
                     />
                 </div>
 

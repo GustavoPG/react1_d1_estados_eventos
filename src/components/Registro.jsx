@@ -2,9 +2,9 @@
 import React from 'react';
 import SocialButton from "./SocialButton";
 import Formulario from "./Formulario";
-import Alert from "./Alert";
+//import Alert from "./Alert";
 
-const Registro = ({ myAlert, alertText, alertType, alertState }) => {
+const Registro = ({ myAlert }) => {
     const iconsData = [
         {
             iconName: "lni lni-facebook-oval",
@@ -22,14 +22,10 @@ const Registro = ({ myAlert, alertText, alertType, alertState }) => {
 
     return (
         <>
-            <div className="card-body p-5 text-center">
-                <h3 className="mb-2">Crea una Cuenta</h3>
-                <SocialButton links={iconsData} />
-                <h5 className="mt-3">O usa tu email para registrarte</h5>
-                <Formulario showAlert={myAlert} />
-                <Alert alertText={alertText} alertType={alertType} alertState={alertState} />
-                <hr className="my-4" />
-            </div>
+            <h3 className="mb-2">Crea una Cuenta</h3>
+            <SocialButton links={ iconsData } />
+            <h5 className="mt-2">O usa tu email para registrarte</h5>
+            <Formulario showAlert={ myAlert } />
         </>
     );
 };

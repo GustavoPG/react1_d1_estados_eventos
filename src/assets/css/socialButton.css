@@ -8,7 +8,7 @@
 
 .my-icon {
     color: black;
-    font-size: 4rem;
+    font-size: 4.5rem;
     display: inline-block; /* Asegura que el enlace se comporte como un bloque */
      /* Transición suave durante 0.3 segundos */
      /* transition: transform 0.8s ease; */
@@ -17,8 +17,8 @@
   }
   
   .my-icon:hover {
-    color: black;
+    /* color: black; */
     /* transform: rotate(360deg);  */
     /* Rota el enlace 360 grados cuando se hace hover */
-    transform: scale(1.2);
+    transform: scale(1.3);
   }
